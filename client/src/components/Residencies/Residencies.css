@@ -1,0 +1,53 @@
+.r-container {
+  gap: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.r-head {
+  margin-bottom: 2rem;
+}
+
+.swiper-horizontal {
+  overflow: visible;
+}
+
+.slideImg > img{
+  width: 13.7rem;
+  height: 10rem;
+  border-radius: 10px;
+}
+
+.r-buttons {
+  position: absolute;
+  gap: 1rem;
+  top: -4rem;
+  right: 0;
+}
+
+.r-buttons button {
+  font-size: 1.2rem;
+  padding: 0.2rem 0.8rem;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.r-buttons > :nth-child(1) {
+  background-color: #fff7ee;
+}
+
+.r-buttons > :nth-child(2) {
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 640px) {
+  .r-head {
+    align-items: center;
+  }
+  .r-buttons {
+    position: initial;
+  }
+}

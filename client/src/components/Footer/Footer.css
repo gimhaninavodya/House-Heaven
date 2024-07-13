@@ -1,0 +1,93 @@
+.f-wrapper {
+  background-color: #dbc1a8;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.f-container {
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.f-left {
+  gap: 1rem;
+}
+
+.f-left img {
+  margin-bottom: 1rem;
+}
+
+.f-left .secondaryText {
+  font-size: 14px;
+  color: #555;
+}
+
+.f-socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.f-icon {
+  font-size: 20px;
+  color: #817f7f;
+  transition: color 0.3s;
+}
+
+.f-icon:hover {
+  color: #625547;
+}
+
+.f-right {
+  gap: 1rem;
+}
+
+.f-right .primaryText {
+  font-size: 25px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.1rem;
+}
+
+.f-right .secondaryText {
+  font-size: 16px;
+  color: #555;
+}
+
+.f-menu {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 500;
+}
+
+.f-menu span {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.f-menu span:hover {
+  color: #625547;
+}
+
+@media (max-width: 768px) {
+  .f-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .f-container > div {
+    align-items: center !important;
+    text-align: center;
+  }
+
+  .f-right {
+    justify-content: center;
+  }
+
+  .f-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

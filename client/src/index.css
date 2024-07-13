@@ -1,0 +1,154 @@
+:root {
+  --primary: #BD8966;
+  --secondary: rgba(255, 255, 255, 0.78);
+  --black: #131110;
+  --lightOrange-gradient: linear-gradient(97.05deg, #bf9a6a 50.67%, #dbc1a8 100%);
+  --brown-gradient: linear-gradient(270deg, #625547 0%, #625547 100%);
+  --orangeBrown: #BD8966;
+  --lightOrange: #fff7ee;
+  --shadow: 0px 23px 21px -8px rgba(136, 160, 255, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.paddings {
+  padding: 1.5rem;
+}
+
+.innerWidth {
+  width: 100%;
+}
+
+.wrapper{
+  background-color: white;
+}
+
+.flexCenter {
+  display: flex;
+  row-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flexEnd {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.flexColCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.flexColStart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.flexColEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.primaryText {
+  color: #BD8966;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.secondaryText {
+  color: rgb(1, 1, 1);
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+.pageTitle{
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.orangeText {
+  color: #625547;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.button {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--lightOrange-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+
+.button:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.buttonMain {
+  font-weight: 500;
+  padding: 0.6rem 1.4rem;
+  color: white;
+  background: var(--brown-gradient);
+  border: none;
+  border-radius: 4px;
+  transition: all 300ms ease-in;
+}
+
+.buttonMain:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+/* media queries */
+@media (min-width: 1536px) {
+  .innerWidth {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 640px) {
+  .paddings {
+    padding: 4rem;
+  }
+}
+
+@media (min-width: 1280px), (min-width: 768px) {
+  .paddings {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .primaryText {
+    font-size: 1.5rem;
+  }
+  .orangeText {
+    font-size: 1.2rem;
+  }
+}
